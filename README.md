@@ -20,7 +20,7 @@ Go to  https://github.com/jas-preet/SPOT-1D-LM.git download and install the prog
 * Install psaia.exe 
 Go to the Website：https://sourceforge.net/projects/psaia/ to download and install the program psaia.exe.
 
-#The 1lni A 39 N D as the following example. Its experimental ddg value is 1.5 kcal/mol.
+The 1lni A 39 N D as the following example. Its experimental ddg value is 1.5 kcal/mol.
 ## Feature extraction
 
 ### Topology characteristics
@@ -29,7 +29,7 @@ This step requires two files:1lniX.pdb and 1lni.csv.
 The content of 1lni.csv includes pdbid, chain, residue, wildname mutname. 
 Run the following commands:
 ```{bash}
-cd PMPCNN/code/features/Topology/ and 
+cd PMPCNN/code/features/Topology/ 
 ./run_topology.sh 1lni
 ```
 The output files are "X_h0.np" and "X_h12.npy" shown in "./Results".
