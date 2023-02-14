@@ -1,4 +1,4 @@
-PMPCNN is a quite exceptional unbiased predictor predictor   of ¦¤¦¤G for single-point mutations.
+PMPCNN is a quite exceptional unbiased predictor predictor  of DDG for single-point mutations.
 *Authors: Xiaohan Sun, Chunhua Li. 
 *Title: PMPCNN: Predicting changes of single point missense mutations on protein stability based on convolutional neural network.
 
@@ -19,7 +19,7 @@ For R-tda package:
 **Install SPOT_1D_LM
 Go to  https://github.com/jas-preet/SPOT-1D-LM.git download and install the program SPOT_1D_LM in "Secondary_structural"
 **Install psaia.exe 
-Go to the Website£ºhttps://sourceforge.net/projects/psaia/ to download and install the program psaia.exe.
+Go to the WebsiteÂ£Âºhttps://sourceforge.net/projects/psaia/ to download and install the program psaia.exe.
 
 #The 1lni A 39 N D as the following example. Its experimental ddg value is 1.5 kcal/mol.
 2. Feature extraction
@@ -53,10 +53,10 @@ Run the following commands:
 The output file is "Spot_direct.npy".
 
 **DPX and CX
-Go to the Website£ºhttps://sourceforge.net/projects/psaia/ to download and install the program psaia.exe.
-a. Run ¡°psaia.exe¡±;
+Go to the WebsiteÂ£Âºhttps://sourceforge.net/projects/psaia/ to download and install the program psaia.exe.
+a. Run Â¡Â°psaia.exeÂ¡Â±;
 b. Step by step, selecet "Structure Analyser", then under it select "Analysis Type" and then select "Analyse by Chain". All parameters are set to default.  
-Input the pdb file 1lni.pdb,1lni_39_N_D_mut.pdb (files in PMPCNN/code/features/Topology/pdbfile) to the program, and click ¡°run¡± to get the result, i.e.,1lni.tbl and 1lni_39_N_D_mut.tbl.
+Input the pdb file 1lni.pdb,1lni_39_N_D_mut.pdb (files in PMPCNN/code/features/Topology/pdbfile) to the program, and click Â¡Â°runÂ¡Â± to get the result, i.e.,1lni.tbl and 1lni_39_N_D_mut.tbl.
 Then put the output files into "PMPCNN/code/features/DPX_CX/psaia".
 Run the follwing commands in Linux: "cd PMPCNN/code/features/DPX_CX" and "./run_dpx_cx.sh 1lni".
 The output file is "psaia_direct.npy".
