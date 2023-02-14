@@ -1,4 +1,4 @@
-PMPCNN is a quite exceptional unbiased predictor predictor  of DDG for single-point mutations.
+#PMPCNN is a quite exceptional unbiased predictor predictor  of DDG for single-point mutations.
 *Authors: Xiaohan Sun, Chunhua Li. 
 *Title: PMPCNN: Predicting changes of single point missense mutations on protein stability based on convolutional neural network.
 
