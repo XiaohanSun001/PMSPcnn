@@ -47,7 +47,7 @@ The output files "1lni_CA.txt" and "1lni_39_N_L_mut_CA.txt" in "./pdb_CA","fasta
 ### PSSM and SNB_PSSM
 Go to the website https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome to get a pssm file named 1lni.asn.
 Here, select "PSI-BLAST" for "Program Selection" item, and use default parameters for other items.
-Then "1lni.asn" is then placed in the "./PMPCNN/code/features/PSSM/ASN"
+Then "1lni.asn" is then placed in the "./PMPCNN/code/features/PSSM/ASN".
 Run the following commands: 
 ```{bash}
 cd PMPCNN/code/features/PSSM/
@@ -56,7 +56,7 @@ cd PMPCNN/code/features/PSSM/
 The output files are "PSSM_direct.npy" and "PSSM_cut_direct.npy".
   
 ### Secondary_structural
-Enter the previously built environment:spot_1d_lm
+Enter the previously built environment:spot_1d_lm.
 Run the following commands:
 ```{bash}
 conda activate spot_1d_lm
@@ -81,7 +81,7 @@ cd PMPCNN/code/features/DPX_CX
 The output file is "psaia_direct.npy".
 
 ### Physicochemical_characteristics
-AA index is from the website: https://www.genome.jp/aaindex/ 
+AA index is from the website: https://www.genome.jp/aaindex/.
 Run the following commands:
 ```{bash}
 cd PMPCNN/code/features/DPX_CX
