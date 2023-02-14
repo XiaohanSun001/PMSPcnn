@@ -1,1 +1,0 @@
-The last predicted value is: [1.52755897]
