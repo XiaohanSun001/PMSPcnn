@@ -68,10 +68,11 @@ The output file is "Spot_direct.npy".
 
 ### DPX and CX
 Go to the Website：https://sourceforge.net/projects/psaia/ to download and install the program psaia.exe.
-a. Run “psaia.exe”;
-b. Step by step, selecet "Structure Analyser", then under it select "Analysis Type" and then select "Analyse by Chain". All parameters are set to default.  
-Input the pdb file 1lni.pdb,1lni_39_N_D_mut.pdb (files in PMPCNN/code/features/Topology/pdbfile) to the program, and click “run” to get the result, i.e.,1lni.tbl and 1lni_39_N_D_mut.tbl.
-Then put the output files into "PMPCNN/code/features/DPX_CX/psaia".
+* Run “psaia.exe”;
+* Step by step, selecet "Structure Analyser", then under it select "Analysis Type" and then select "Analyse by Chain". All parameters are set to default.  
+* Input the pdb file 1lni.pdb,1lni_39_N_D_mut.pdb (files in PMPCNN/code/features/Topology/pdbfile) to the program
+* Click “run” to get the result, i.e.,1lni.tbl and 1lni_39_N_D_mut.tbl.
+* Then put the output files into "PMPCNN/code/features/DPX_CX/psaia".
 Run the following commands:
 ```{bash}
 cd PMPCNN/code/features/DPX_CX
