@@ -5,9 +5,9 @@ Authors: Xiaohan Sun, Chunhua Li.
 
 The performance process includes three steps: install, feature extraction and prediction.
 ## Installation
-  Matlab version: R2021a 
-  VMD version: 1.9.3
-  Python version: 3.8
+* Matlab version: R2021a 
+* VMD version: 1.9.3
+* Python version: 3.8
 * For python package:
   pip install scikit-learn ==1.0.1
   pip install keras == 2.7.0
@@ -95,7 +95,7 @@ Run the following command:
 ```{bash}
 python feature_integrate.py
 ```
-then obtained "X_test_nor.npy" file.
+Then obtained "X_test_nor.npy" file.
 
 ## Prediction
 Run the following command:
@@ -105,6 +105,7 @@ python predict.py
 Then the finally output shown in  "./result/predcit_value.txt".
 The predicted value of 1lni_39_N_L is 1.52755897
 If you want to predict several mutations, add them to the pdbid.csv file.
+
 ## Help
 For any questions, please contact us by chunhuali@bjut.edu.cn.
 
