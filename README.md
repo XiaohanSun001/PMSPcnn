@@ -16,11 +16,12 @@ A protein-peptide complex, 1lni_A_39_N_D, is used as an example to show the proc
 * For R-tda package:
   install.packages(pkgs = "TDA")
 * Install SPOT_1D_LM
-    Go to  https://github.com/jas-preet/SPOT-1D-LM.git download and install the program SPOT_1D_LM in "Secondary_structural"
 
-    create environment spot_1d_lm
+  Go to  https://github.com/jas-preet/SPOT-1D-LM.git download and install the program SPOT_1D_LM in "Secondary_structural"
+
 * Install psaia.exe 
-    Go to the Website：https://sourceforge.net/projects/psaia/ to download and install the program psaia.exe.
+
+  Go to the Website：https://sourceforge.net/projects/psaia/ to download and install the program psaia.exe.
 
 The 1lni A 39 N D as the following example. Its experimental ddg value is 1.5 kcal/mol.
 
