@@ -6,7 +6,7 @@ Authors: Xiaohan Sun, Shuang Yang, Zhixiang Wu, Jingjie Su, Fangrui Hu, Fubin Ch
 
 The performance process includes three steps: installation, feature extraction and prediction.
 
-A protein-peptide complex, 1lni_A_39_N_D, is used as an example to show the process. Here, 'A', '39', 'N' and 'D' represent chain, residue number, wildname and mutname respectively.
+A protein-peptide complex, 1lni_A_39_N_D with its experimental ΔΔG value is 1.5 kcal/mol, is used as an example to show the process. Here, 'A', '39', 'N' and 'D' represent chain, residue number, wildname and mutname respectively.
 
 ## Installation
 * Matlab version: R2021a 
@@ -137,7 +137,7 @@ python predict.py
 ```
 The finally output is shown in  "./result/predcit_value.txt".
 
-The predicted value of 1lni_39_N_L is 1.52755897.
+The predicted value of 1lni_39_N_L is 1.52755897 kcal/mol.
 
 If you want to predict several mutations, add them to the pdbid.csv file and run the same process.
 
