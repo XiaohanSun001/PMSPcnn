@@ -28,8 +28,6 @@ A protein-peptide complex, 1lni_A_39_N_D with its experimental ΔΔG value is 1.
 
   Go to the Website：https://sourceforge.net/projects/psaia/ to download and install the program psaia.exe.
 
-The 1lni A 39 N D as the following example. Its experimental ddg value is 1.5 kcal/mol.
-
 ## Feature extraction
 
 ### Topology characteristics
