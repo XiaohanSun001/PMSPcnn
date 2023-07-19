@@ -1,8 +1,8 @@
-# PMPCNN: Predicting changes of single point missense mutations on protein stability based on convolutional neural network.
-PMPCNN is a quite exceptional unbiased predictor predictor   of ΔΔG for single-point mutations.
+# PMSPcnn: Predicting changes of single point missense mutations on protein stability based on convolutional neural network.
+PMSPcnn is a quite exceptional unbiased predictor predictor   of ΔΔG for single-point mutations.
 
 
-Authors: Xiaohan Sun, Chunhua Li. 
+Authors:Xiaohan Sun, Shuang Yang, Zhixiang Wu, Jingjie Su, Fangrui Hu, Fubin Chang, Chunhua Li*. 
 
 
 The performance process includes three steps: install, feature extraction and prediction.
@@ -27,7 +27,7 @@ This step requires two files:1lniX.pdb and 1lni.csv.
 The content of 1lni.csv includes pdbid, chain, residue, wildname mutname. 
 Run the following commands:
 ```{bash}
-cd PMPCNN/code/features/Topology/ 
+cd PMSPcnn/code/features/Topology/ 
 ./run_topology.sh 1lni
 ```
 The output files are "X_h0.np" and "X_h12.npy" shown in "./Results".
@@ -36,7 +36,7 @@ The output files are "X_h0.np" and "X_h12.npy" shown in "./Results".
 Extract the mutant sequence from the generated structure.
 Run the following commands: 
 ```{bash}
-cd PMPCNN/code/features/Gen_seq/"
+cd PMSPcnn/code/features/Gen_seq/"
 ./run_seq.sh 1lni
 ```
 The output files "1lni.fasta" and "1lni_39_N_D_mut.fasta" in "./fasta".
@@ -45,10 +45,10 @@ The output files "1lni_CA.txt" and "1lni_39_N_L_mut_CA.txt" in "./pdb_CA","fasta
 ### PSSM and SNB_PSSM
 Go to the website https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome to get a pssm file named 1lni.asn.
 Here, select "PSI-BLAST" for "Program Selection" item, and use default parameters for other items.
-Then "1lni.asn" is then placed in the "./PMPCNN/code/features/PSSM/ASN".
+Then "1lni.asn" is then placed in the "./PMSPcnn/code/features/PSSM/ASN".
 Run the following commands: 
 ```{bash}
-cd PMPCNN/code/features/PSSM/
+cd PMSPcnn/code/features/PSSM/
 ./run_pssm.sh 1lni
 ```
 The output files are "PSSM_direct.npy" and "PSSM_cut_direct.npy".
@@ -58,7 +58,7 @@ Enter the previously built environment:spot_1d_lm.
 Run the following commands:
 ```{bash}
 conda activate spot_1d_lm
-cd PMPCNN/code/features/Secondary_structural
+cd PMSPcnn/code/features/Secondary_structural
 ./run_secondary_structural.sh
 conda deactivate
 ```
@@ -68,12 +68,12 @@ The output file is "Spot_direct.npy".
 Go to the Website：https://sourceforge.net/projects/psaia/ to download and install the program psaia.exe.
 * Run “psaia.exe”;
 * Step by step, selecet "Structure Analyser", then under it select "Analysis Type" and then select "Analyse by Chain". All parameters are set to default.  
-* Input the pdb file 1lni.pdb,1lni_39_N_D_mut.pdb (files in PMPCNN/code/features/Topology/pdbfile) to the program
+* Input the pdb file 1lni.pdb,1lni_39_N_D_mut.pdb (files in PMSPcnn/code/features/Topology/pdbfile) to the program
 * Click “run” to get the result, i.e.,1lni.tbl and 1lni_39_N_D_mut.tbl.
-* Then put the output files into "PMPCNN/code/features/DPX_CX/psaia".
+* Then put the output files into "PMSPcnn/code/features/DPX_CX/psaia".
 Run the following commands:
 ```{bash}
-cd PMPCNN/code/features/DPX_CX
+cd PMSPcnn/code/features/DPX_CX
 ./run_dpx_cx.sh 1lni
 ```
 The output file is "psaia_direct.npy".
@@ -82,7 +82,7 @@ The output file is "psaia_direct.npy".
 AA index is from the website: https://www.genome.jp/aaindex/.
 Run the following commands:
 ```{bash}
-cd PMPCNN/code/features/DPX_CX
+cd PMSPcnn/code/features/DPX_CX
 ./run_phy_cha.sh 1lni
 ```
 Then you can obtain a file called "AA_direct.npy".
