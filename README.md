@@ -6,6 +6,8 @@ Authors: Xiaohan Sun, Shuang Yang, Zhixiang Wu, Jingjie Su, Fangrui Hu, Fubin Ch
 
 The performance process includes three steps: installation, feature extraction and prediction.
 
+## Example
+
 A protein-peptide complex, 1lni_A_39_N_D with its experimental ΔΔG value is 1.5 kcal/mol, is used as an example to show the process. Here, 'A', '39', 'N' and 'D' represent chain, residue number, wildname and mutname respectively.
 
 ## Installation
