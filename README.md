@@ -111,7 +111,7 @@ cd PMSPcnn/code/features/DPX_CX
 ```
 The output file is "AA_direct.npy".
 
-## Feature integration
+### Feature integration
 
 After all features are extracted, all the feature files obtained. 
 Run the following command: 
