@@ -1,11 +1,11 @@
 # PMSPcnn: Predicting changes of single point missense mutations on protein stability based on convolutional neural network.
-PMSPcnn is a quite exceptional unbiased predictor predictor   of ΔΔG for single-point mutations.
 
+PMSPcnn is a quite exceptional unbiased predictor predictor   of ΔΔG for single-point mutations.
 
 Authors: Xiaohan Sun, Shuang Yang, Zhixiang Wu, Jingjie Su, Fangrui Hu, Fubin Chang, Chunhua Li. 
 
-
 The performance process includes three steps: install, feature extraction and prediction.
+
 ## Installation
 * Matlab version: R2021a 
 * VMD version: 1.9.3
@@ -14,18 +14,21 @@ The performance process includes three steps: install, feature extraction and pr
 * For R-tda package:
   install.packages(pkgs = "TDA")
 * Install SPOT_1D_LM
-Go to  https://github.com/jas-preet/SPOT-1D-LM.git download and install the program SPOT_1D_LM in "Secondary_structural"
+    Go to  https://github.com/jas-preet/SPOT-1D-LM.git download and install the program SPOT_1D_LM in "Secondary_structural"
 * Install psaia.exe 
-Go to the Website：https://sourceforge.net/projects/psaia/ to download and install the program psaia.exe.
+    Go to the Website：https://sourceforge.net/projects/psaia/ to download and install the program psaia.exe.
 
 The 1lni A 39 N D as the following example. Its experimental ddg value is 1.5 kcal/mol.
+
 ## Feature extraction
 
 ### Topology characteristics
+
 This step requires two files:1lniX.pdb and 1lni.csv.
-1lniX.pdb is the 3D structure of 1lni constructed by Alphafold2.
-The content of 1lni.csv includes pdbid, chain, residue, wildname mutname. 
+* 1lniX.pdb is the 3D structure of 1lni constructed by Alphafold2.
+* The content of 1lni.csv includes pdbid, chain, residue, wildname mutname. 
 Run the following commands:
+
 ```{bash}
 cd PMSPcnn/code/features/Topology/ 
 ./run_topology.sh 1lni
@@ -35,6 +38,7 @@ The output files are "X_h0.np" and "X_h12.npy" shown in "./Results".
 ### Generating sequence
 Extract the mutant sequence from the generated structure.
 Run the following commands: 
+
 ```{bash}
 cd PMSPcnn/code/features/Gen_seq/"
 ./run_seq.sh 1lni
