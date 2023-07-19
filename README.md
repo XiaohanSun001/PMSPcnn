@@ -33,9 +33,10 @@ Run the following commands:
 cd PMSPcnn/code/features/Topology/ 
 ./run_topology.sh 1lni
 ```
-The output files are "X_h0.np" and "X_h12.npy" shown in "./Results".
+The output files "X_h0.np" and "X_h12.npy" are placed in "./Results".
   
 ### Generating sequence
+
 Extract the mutant sequence from the generated structure.
 Run the following commands: 
 
@@ -43,14 +44,17 @@ Run the following commands:
 cd PMSPcnn/code/features/Gen_seq/"
 ./run_seq.sh 1lni
 ```
-The output files "1lni.fasta" and "1lni_39_N_D_mut.fasta" in "./fasta".
-The output files "1lni_CA.txt" and "1lni_39_N_L_mut_CA.txt" in "./pdb_CA","fasta_test.txt".
+The output files "1lni.fasta" and "1lni_39_N_D_mut.fasta" are placed in "./fasta", and "1lni_CA.txt" and "1lni_39_N_L_mut_CA.txt" are placed in "./pdb_CA","fasta_test.txt".
 
 ### PSSM and SNB_PSSM
+
 Go to the website https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome to get a pssm file named 1lni.asn.
-Here, select "PSI-BLAST" for "Program Selection" item, and use default parameters for other items.
+
 Then "1lni.asn" is then placed in the "./PMSPcnn/code/features/PSSM/ASN".
+
+Here, select "PSI-BLAST" for "Program Selection" item, and use default parameters for other items.
 Run the following commands: 
+
 ```{bash}
 cd PMSPcnn/code/features/PSSM/
 ./run_pssm.sh 1lni
@@ -58,8 +62,10 @@ cd PMSPcnn/code/features/PSSM/
 The output files are "PSSM_direct.npy" and "PSSM_cut_direct.npy".
   
 ### Secondary_structural
+
 Enter the previously built environment:spot_1d_lm.
 Run the following commands:
+
 ```{bash}
 conda activate spot_1d_lm
 cd PMSPcnn/code/features/Secondary_structural
@@ -69,6 +75,7 @@ conda deactivate
 The output file is "Spot_direct.npy".
 
 ### DPX and CX
+
 Go to the Website：https://sourceforge.net/projects/psaia/ to download and install the program psaia.exe.
 * Run “psaia.exe”;
 * Step by step, selecet "Structure Analyser", then under it select "Analysis Type" and then select "Analyse by Chain". All parameters are set to default.  
@@ -76,6 +83,7 @@ Go to the Website：https://sourceforge.net/projects/psaia/ to download and inst
 * Click “run” to get the result, i.e.,1lni.tbl and 1lni_39_N_D_mut.tbl.
 * Then put the output files into "PMSPcnn/code/features/DPX_CX/psaia".
 Run the following commands:
+
 ```{bash}
 cd PMSPcnn/code/features/DPX_CX
 ./run_dpx_cx.sh 1lni
@@ -83,8 +91,10 @@ cd PMSPcnn/code/features/DPX_CX
 The output file is "psaia_direct.npy".
 
 ### Physicochemical_characteristics
+
 AA index is from the website: https://www.genome.jp/aaindex/.
 Run the following commands:
+
 ```{bash}
 cd PMSPcnn/code/features/DPX_CX
 ./run_phy_cha.sh 1lni
@@ -92,8 +102,10 @@ cd PMSPcnn/code/features/DPX_CX
 Then you can obtain a file called "AA_direct.npy".
 
 ## Feature integration
+
 After all features are extracted, all the feature files obtained. 
 Run the following command: 
+
 ```{bash}
 python feature_integrate.py
 ```
@@ -101,17 +113,19 @@ Then obtained "X_test_nor.npy" file.
 
 ## Prediction
 Run the following command:
+
 ```{bash}
 python predict.py
 ```
-Then the finally output shown in  "./result/predcit_value.txt".
+The finally output shown in  "./result/predcit_value.txt".
+
 The predicted value of 1lni_39_N_L is 1.52755897
+
 If you want to predict several mutations, add them to the pdbid.csv file.
 
 ## Help
+
 For any questions, please contact us by chunhuali@bjut.edu.cn.
-
-
 
 
 
