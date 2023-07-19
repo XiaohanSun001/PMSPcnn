@@ -2,7 +2,7 @@
 PMSPcnn is a quite exceptional unbiased predictor predictor   of ΔΔG for single-point mutations.
 
 
-Authors: Xiaohan Sun, Shuang Yang, Zhixiang Wu, Jingjie Su, Fangrui Hu, Fubin Chang, Chunhua Li*. 
+Authors: Xiaohan Sun, Shuang Yang, Zhixiang Wu, Jingjie Su, Fangrui Hu, Fubin Chang, Chunhua Li. 
 
 
 The performance process includes three steps: install, feature extraction and prediction.
