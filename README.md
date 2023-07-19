@@ -6,7 +6,7 @@ Authors: Xiaohan Sun, Shuang Yang, Zhixiang Wu, Jingjie Su, Fangrui Hu, Fubin Ch
 
 The performance process includes three steps: installation, feature extraction and prediction.
 
-A protein-peptide complex, 1lni_A_39_N_D, is used as an example to show the process. Here, 'A', '39', 'N' and 'D' represent chain, residue, wild and mutant respectively.
+A protein-peptide complex, 1lni_A_39_N_D, is used as an example to show the process. Here, 'A', '39', 'N' and 'D' represent chain, residue, wwildname and mutname respectively.
 
 ## Installation
 * Matlab version: R2021a 
