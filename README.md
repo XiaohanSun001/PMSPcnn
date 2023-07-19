@@ -12,9 +12,14 @@ A protein-peptide complex, 1lni_A_39_N_D, is used as an example to show the proc
 * Matlab version: R2021a 
 * VMD version: 1.9.3
 * Python version: 3.8
-* For python package: pip install scikit-learn ==1.0.1; pip install keras == 2.7.0; pip install numpy == 1.18.5; pip install scipy == 1.4.1.
+* For python package:
+  
+  pip install scikit-learn ==1.0.1; pip install keras == 2.7.0; pip install numpy == 1.18.5; pip install scipy == 1.4.1.
+  
 * For R-tda package:
+
   install.packages(pkgs = "TDA")
+  
 * Install SPOT_1D_LM
 
   Go to  https://github.com/jas-preet/SPOT-1D-LM.git download and install the program SPOT_1D_LM in "Secondary_structural"
