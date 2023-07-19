@@ -4,7 +4,7 @@ PMSPcnn is a quite exceptional unbiased predictor predictor of ΔΔG for single-
 
 Authors: Xiaohan Sun, Shuang Yang, Zhixiang Wu, Jingjie Su, Fangrui Hu, Fubin Chang, Chunhua Li. 
 
-The performance process includes three steps: install, feature extraction and prediction.
+The performance process includes three steps: installation, feature extraction and prediction.
 
 ## Installation
 * Matlab version: R2021a 
